@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div class="wado">
+            <div class="wado-face">
+                <div class="wado-face_top">
+                </div>
+                <div class="wado-face_bottom">
+                    <div class="wado-face_bottom_inner">
+                    </div>
+                </div>
+                <div class="wado-face_inner">
+                    <div class="wado-face_inner_top">
+                        <div class="wado-face-eyes">
+                            <div class="wado-face-eye">
+                                <div class="wado-face-eye_inner">
+                                </div>
+                            </div>
+                            <div class="wado-face-eye">
+                                <div class="wado-face-eye_inner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wado-face-cheek">
+                    </div>
+                    <div class="wado-face-cheek">
+                    </div>
+                    <div class="wado-face_inner_bottom">
+                    </div>
+                </div>
+            </div>
+            <div class="wado-arm">
+                <div class="wado-arm_inner">
+
+                </div>
+            </div>
+            <div class="wado-arm">
+                <div class="wado-arm_inner">
+
+                </div>
+            </div>
+            <div class="wado-foot">
+            </div>
+            <div class="wado-foot">
+            </div>
+        </div>
+    </body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            
+            background-color: rebeccapurple;
+        }
+        .wado {
+            width: 648px;
+            height: 584px;
+            position: relative;
+        }
+        .wado-face {
+            width: 556px;
+            height: 520px;
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .wado-face_top {
+            position: absolute;
+            width: 556px;
+            height: 509px;
+            top: 0;
+            right:0;
+            left:0;
+            margin: auto;
+            background-color: #FF7233;
+            border-radius: 50%;
+            border: 15px solid #F32283;
+        }
+
+        .wado-face_bottom {
+            position: absolute;
+            bottom: 0;
+            right:0;
+            left:0;
+            height: 160px;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .wado-face_bottom_inner {
+            position: absolute;
+            width: 506px;
+            height: 328px;
+            bottom: 0;
+            right:0;
+            left:0;
+            margin: auto;
+            background-color: #FF7233;
+            border-radius: 50%;
+            border: 10px solid #F32283;
+        }
+
+        .wado-arm {
+            position: absolute;
+            left: -60px;
+            transform: rotate(-116deg);
+            top: 270px;
+            overflow: hidden;
+            height: 100px;
+        
+        }
+        .wado-arm_inner {
+            width: 227px;
+            height: 333px;
+            background-color: #FF7233;
+            border-radius: 50%;
+            border: 15px solid #F32283;
+        }
+        .wado-arm:nth-child(2) {
+            position: absolute;
+            left: auto;
+            right: -60px;
+            transform: rotate(116deg);
+            top: 270px;
+        }
+
+        .wado-face_inner {
+            z-index: 2;
+            position: absolute;
+            bottom: 30px;
+            right:0;
+            left:0;
+            margin: auto;
+            width: 446px;
+            height: 438px;
+        }
+        
+        .wado-face_inner_top {
+            background-color: #FCE7CB;
+            width: 360px;
+            height: 352px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right:0;
+            left:0;
+            margin: auto;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 40px;
+
+        }
+
+        .wado-face_inner_bottom {
+            background-color: #FCE7CB;
+            width: 446px;
+            height: 320px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            right:0;
+            left:0;
+            margin: auto;
+
+        }
+        
+        .wado-face-eyes {
+            display: flex;
+            width: 182px;
+            height: 142px;
+            justify-content: space-between;
+            z-index: 1;
+        }
+
+        .wado-face-eye {
+            height: 142px;
+            width: 64px;
+            background-color: #F32283;
+            border-radius: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wado-face-eye_inner {
+            height: 120px;
+            width: 40px;
+            background-color: #F32283;
+            border-radius: 45%;
+            box-shadow: 0px -20px 0px 0 #FC643F inset;
+            position: relative;
+        }
+
+        .wado-face-eye_inner:after {
+            position: absolute;
+            top: 0;
+            right:0;
+            left:0;
+            margin: auto;
+            content:"";
+            height: 50px;
+            width: 35px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+
+        .wado-face-cheek {
+            width: 82px;
+            height: 60px;
+            background-color: #FDB27C;
+            border-radius: 50%;
+            z-index: 3;
+            left: 30px;
+            position: absolute;
+            top: 200px;
+        }
+
+        .wado-face-cheek:nth-child(2) {
+            background-color: #FDB27C;
+            left: auto;
+            right: 30px;
+        }
+
+        .wado-foot {
+            width: 290px;
+            height: 180px;
+            position: absolute;
+            bottom: 0;
+            background-color: #FFDA05;
+            border: solid 20px #F32283;
+            border-radius: 240px 0 140px 150px;
+            left: 32px;
+
+        }
+        .wado-foot:last-child {
+            background-color: #FFDA05;
+            border: solid 20px #F32283;
+            border-radius: 0 240px 150px 140px;
+            left: auto;
+            right: 32px;
+        }
+    </style>
+</html>

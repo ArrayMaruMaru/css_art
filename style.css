@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: "游ゴシック", "Yu Gothic";
+}
+
+body {
+  background-color: rgb(255, 255, 238);
+}
+
+table {
+  width: 800px;
+  position: relative;
+}
+
+td:first-child {
+  position: relative;
+  display: inline-block;
+  height: 70px;
+}
+tr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 1px;
+}
+td:first-child {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+td:last-child {
+  width: 30px;
+  color: #222;
+  right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+td:first-child:after {
+  display: inline-block;
+}
+td:first-child:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 0;
+  border-style: solid;
+  border-width: 0 50px 70px 50px;
+  border-color: transparent;
+}
+tr:nth-child(n + 1) td:first-child {
+  width: 100px;
+}
+tr:nth-child(n + 1) td:first-child:after {
+  border-bottom-color: rgb(166, 46, 255);
+}
+
+tr:nth-child(n + 2) td:first-child:after {
+  border-bottom-color: rgb(71, 143, 254);
+}
+tr:nth-child(n + 2) td:first-child {
+  width: 200px;
+}
+
+tr:nth-child(n + 3) td:first-child:after {
+  border-bottom-color: rgb(71, 200, 255);
+}
+tr:nth-child(n + 3) td:first-child {
+  width: 300px;
+}
+
+tr:nth-child(n + 4) td:first-child:after {
+  border-bottom-color: rgb(95, 234, 63);
+}
+tr:nth-child(n + 4) td:first-child {
+  width: 400px;
+}
+
+tr:nth-child(n + 5) td:first-child:after {
+  border-bottom-color: rgb(225, 204, 0);
+}
+tr:nth-child(n + 5) td:first-child {
+  width: 500px;
+}
+tr:nth-child(n + 6) td:first-child:after {
+  border-bottom-color: rgb(235, 122, 39);
+}
+tr:nth-child(n + 6) td:first-child {
+  width: 600px;
+}
+tr:nth-child(n + 7) td:first-child:after {
+  border-bottom-color: rgb(235, 51, 141);
+}
+tr:nth-child(n + 7) td:first-child {
+  width: 700px;
+}
+
+tr:nth-child(n + 4) td:first-child {
+  text-shadow: 2px 2px 2px#000;
+  font-size: 25px;
+  padding-top: 0;
+}
+
+tr:nth-child(n + 7) td:first-child {
+  text-shadow: 3px 3px 3px#000;
+  font-size: 30px;
+  padding-top: 0;
+}
+
+tr:nth-child(n + 4) td:last-child {
+  font-size: 30px;
+}
+
+tr:nth-child(n + 7) td:last-child {
+  font-size: 50px;
+  color: red;
+}
