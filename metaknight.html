@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="metaknight">
+		<div class="face">
+			<div class="mask">
+				<div class="mask_parts">
+					<div class="mask_part">
+						<div class="mask_part_round">
+						</div>
+						<div class="mask_part_pointed">
+							<div class="mask_part_pointed_inner">
+							</div>
+						</div>
+					</div>
+					<div class="mask_part">
+						<div class="mask_part_round">
+						</div>
+						<div class="mask_part_pointed">
+							<div class="mask_part_pointed_inner">
+							</div>
+						</div>
+					</div>
+					<div class="mask_part">
+						<div class="mask_part_round">
+						</div>
+						<div class="mask_part_pointed">
+							<div class="mask_part_pointed_inner">
+							</div>
+						</div>
+					</div>
+					<div class="mask_part">
+						<div class="mask_part_round">
+						</div>
+						<div class="mask_part_pointed">
+							<div class="mask_part_pointed_inner">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mask_eyes">
+					<div class="mask_eye">
+						<div class="mask_eye_inner">
+							<div class="mask_eye_highlight">
+							</div>
+						</div>
+					</div>
+
+					<div class="mask_eye">
+						<div class="mask_eye_inner">
+							<div class="mask_eye_highlight">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="mant">
+		</div>
+		<div class="mant_cloth">
+			<div class="mant_cloth_inner">
+			</div>
+		</div>
+		<div class="shoulder_armor">
+			<div class="shoulder_armor_inner"></div>
+			<div class="shoulder_armor_outer">
+				<div class="shoulder_armor_outer_inner">
+
+				</div>
+			</div>
+			<div class="shoulder_armor_outer_line">
+				</div>
+		</div>
+		<div class="shoulder_armor out_line">
+			<div class="shoulder_armor_inner"></div>
+			<div class="shoulder_armor_outer">
+				<div class="shoulder_armor_outer_inner">
+
+				</div>
+			</div>
+			<div class="shoulder_armor_outer_line">
+			</div>
+			<div class="shoulder_armor_inner_after">
+				<div class="shoulder_armor_inner_after_inner">
+				</div>
+			</div>
+		</div>
+		<div class="shoulder_armor right">
+			<div class="shoulder_armor_inner"></div>
+			<div class="shoulder_armor_outer">
+				<div class="shoulder_armor_outer_inner">
+				</div>
+			</div>
+			<div class="emblem">
+				<span>w</span>
+				<div class="emblem_diamond"></div>
+				<div class="emblem_triangle"></div>
+			</div>
+			<div class="shoulder_armor_outer_line">
+				</div>
+		</div>
+		<div class="shoulder_armor out_line right">
+			<div class="shoulder_armor_inner"></div>
+			<div class="shoulder_armor_outer">
+				<div class="shoulder_armor_outer_inner">
+
+				</div>
+			</div>
+			<div class="shoulder_armor_outer_line">
+			</div>
+			<div class="shoulder_armor_inner_after">
+				<div class="shoulder_armor_inner_after_inner">
+				</div>
+			</div>
+		</div>
+		<div class="hand">
+			<div class="finger">
+			</div>
+		</div>
+		<div class="hand right">
+			<div class="finger">
+			</div>
+		</div>
+		<div class="meta_shoes">
+			<div class="meta-foot left">
+				<div class="meta-foot_inner">
+				</div>
+			</div>
+			<div class="meta-foot_shoe-sole left">
+			</div>
+			<div class="meta_foot clone left">
+				<div class="meta-foot left">
+					<div class="meta-foot_inner">
+					</div>
+				</div>
+				<div class="meta-foot_shoe-sole left">
+				</div>
+				<div class="shoe_part">
+				</div>
+			</div>
+			<div class="meta-foot right">
+				<div class="meta-foot_inner">
+				</div>
+			</div>
+			<div class="meta-foot_shoe-sole right">
+			</div>
+			<div class="meta_foot clone right">
+				<div class="meta-foot right">
+					<div class="meta-foot_inner">
+					</div>
+				</div>
+				<div class="meta-foot_shoe-sole right">
+				</div>
+				<div class="shoe_part">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<style>
+		body {
+			height: 100vh;
+			background: greenyellow;
+		}
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.metaknight {
+			width: 666px;
+			height: 460px;
+			position: relative;
+		}
+
+		.face {
+			margin: 0 auto;
+			width: 354px;
+			height: 354px;
+			background-color: #7587FA;
+		    border: solid 10px #F61783;
+		    border-radius: 50%;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    padding-bottom: 10px;
+			top: 45px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+		.mask {
+			width: 320px;
+			height: 320px;
+			background-color: #EDE9FF;
+		    border: solid 10px #F61783;
+		    border-radius: 50%;
+		    position: relative;
+			z-index: 3;
+		}
+
+		.mask_parts {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		.mask_part {
+			position: absolute;
+			top: 0px;
+		}
+
+		.mask_part_round{
+			overflow: hidden;
+		    height: 18px;
+		    width: 36px;
+		    position: absolute;
+		    z-index: 1;
+		    top: 0;
+		}
+		.mask_part_round:after {
+			content: "";
+		    display: block;
+		    background: #EDE9FF;
+		    border: solid 8px #F61783;
+		    border-right: solid 8px transparent;
+		    border-bottom: solid 8px transparent;
+		    border-radius: 50%;
+		    width: 20px;
+		    height: 20px;
+		    transform: rotate(45deg);
+		}
+		.mask_part_pointed {
+		    width: 60px;
+		    height: 56px;
+		    overflow: hidden;
+		    position: absolute;
+		    top: 16px;
+
+		}
+		.mask_part_pointed_inner {
+		    display: block;
+		    position: absolute;
+		    content: "";
+		    z-index: -1;
+		    top: -30px;
+		    left: -12px;
+		    width: 60px;
+		    height: 60px;
+		    background: #EDE9FF;
+		    border: solid 12px #F61783;
+		    transform:
+		      rotate(45deg)
+		      skew(
+		        calc((90deg - 30deg) / 2),
+		        calc((90deg - 30deg) / 2)
+		      );
+		  }
+
+		.mask_eyes {
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+
+		.mask_eye {
+		    display: block;
+		    width: 106px;
+		    overflow: hidden;
+		    height: 130px;
+		    position: absolute;
+		    left: 0;
+		    right: 100px;
+		    margin: auto;
+		    top: 90px;
+		  }
+
+		.mask_eye .mask_eye_inner {
+		    display: block;
+		    position: absolute;
+		    top: 30px;
+		    width: 120px;
+		    height: 70px;
+			background-color: #484A85;
+		    border: solid 12px #F61783;
+
+		    transform:
+		      skew(
+		        0,
+		        calc((90deg - 30deg) / 2)
+		      );
+		      overflow: hidden;
+		  }
+
+		.mask_eye:nth-child(2) {
+		    left: 110px;
+		    right: 0;
+		}
+
+		.mask_eye:nth-child(2) .mask_eye_inner {
+			left: -20px;
+			top: 33px;
+		    transform:
+		      scale(-1,1)
+		      skew(
+		        0,
+		        calc((90deg - 30deg) / 2)
+		      );
+		}
+
+		.mask_eye_highlight {
+			border-radius: 45%;
+			width: 40px;
+			height: 105px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			bottom: 10px;
+			background-color: #FFDC00;
+			position: absolute;
+			transform:
+				scale(-1,1)
+				skew(
+				0,
+				calc((90deg - 30deg) / 2)
+			);
+		}
+
+		.mask_part:nth-child(1) {
+			transform: rotate(-22deg);
+			top: 0px;
+			left: 60px;
+		}
+
+		.mask_part:nth-child(2) {
+			transform: rotate(-45deg);
+			top: 35px;
+			left: 20px;
+		}
+
+		.mask_part:nth-child(3) {
+			transform: scale(-1,1) rotate(-22deg);
+			top: 0px;
+			right: 60px;
+		}
+
+		.mask_part:nth-child(4) {
+			transform: scale(-1,1) rotate(-45deg);
+			top: 35px;
+			right: 20px;
+		}
+
+		.mask:after {
+			position: absolute;
+			content: "";
+			height: 130px;
+			width: 10px;
+			border-radius: 5px;
+			background-color: #F61783;
+			top: -3px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+		.mask:before {
+			position: absolute;
+			content: "";
+			height: 70px;
+			width: 10px;
+			border-radius: 5px;
+			background-color: #F61783;
+			bottom: -3px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+
+		.shoulder_armor {
+			width: 168px;
+			height: 154px;
+			border-radius: 50%;
+			background-color: #5669FB;
+			border: #F61783 8px solid;
+			position: absolute;
+			left: 60px;
+			bottom: 200px;
+			z-index: -1;
+		}
+		.shoulder_armor_inner {
+			position: absolute;
+			width: 142px;
+			height: 142px;
+			border-radius: 50%;
+			background-color: #5669FB;
+			left:5px;
+			top: -1px;
+			z-index: 2;
+		}
+
+		.shoulder_armor_outer {
+			width: 178px;
+			height: 86px;
+			overflow: hidden;
+			transform: rotate(242deg);
+			position: absolute;
+			left: -52px;
+			top: 35px;
+		}
+		.shoulder_armor_outer_inner {
+			width: 178px;
+			height: 166px;
+			border-radius: 50%;
+			background: linear-gradient(180deg, #5669FB 0 47%, #F61783 47% 100%);
+			border: #F61783 8px solid;
+			position: relative;
+		}
+
+		.mant {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 280px;
+			height: 294px;
+			border: #F61783 8px solid;
+			border-radius: 50%;
+			background-color: #EDE9FF;
+			z-index: -2;
+		}
+
+		.mant:before {
+			content: "";
+			display: block;
+			border: #F61783 8px solid;
+			background-color: #EDE9FF;
+			border-radius: 50%;
+			width: 384px;
+			height: 95px;
+			position: absolute;
+			top: 43px;
+			left: -67px;
+			right: 0;
+			margin: auto;
+		}
+		.mant:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			width: 266px;
+			height: 278px;
+			border-radius: 50%;
+			background-color: #EDE9FF;
+		}
+
+		.shoulder_armor.out_line {
+			transform: scale(1.2);
+			z-index: -2;
+			background-color: transparent;
+			border-color: transparent;
+		}
+
+		.shoulder_armor.out_line .shoulder_armor_inner {
+			background-color: transparent;
+		}
+
+		.shoulder_armor.out_line .shoulder_armor_outer_inner {
+			background: linear-gradient(180deg,#FFDC00 0 47%, #F61783 47% 100%);
+			border: #F61783 6px solid;
+		}
+		.shoulder_armor.out_line .shoulder_armor_inner_after{
+			width: 19px;
+			height: 34px;
+			overflow: hidden;
+			display: block;
+			position: absolute;
+			top: -24px;
+			right: 101px;
+			border-bottom-color: transparent;
+			transform: rotate(150deg);
+		}
+		.shoulder_armor.out_line .shoulder_armor_inner_after_inner{
+			content: "";
+			width: 34px;
+			height: 34px;
+			border-radius: 50%;
+			display: block;
+			background-color: #FFDC00;
+			border: #F61783 7px solid;
+		}
+		.shoulder_armor.right {
+			transform: scale(-1,1);
+			right: 60px;
+			left: auto;
+		}
+
+		.shoulder_armor.right .emblem {
+			transform: rotate(220deg) scale(0.9, 0.5);
+			position: absolute;
+			left: 10px;
+			top: -10px;
+			z-index: 3;
+		}
+		
+		.shoulder_armor.right .emblem_diamond {
+			position: absolute;
+		    width: 30px;
+		    height: 30px;
+		    transform:
+		      rotate(45deg)
+		      skew(
+		        calc((90deg - 30deg) / 2),
+		        calc((90deg - 30deg) / 2)
+		      );
+			background-color: #fff;
+			left: 25px;
+			top: 100px;
+			z-index: 3;
+		}
+		.shoulder_armor.right .emblem_triangle {
+			position: absolute;
+			width: 0px;
+			height: 0px;
+			border-top: transparent 40px solid;
+			border-left: transparent 5px solid;
+			border-right: transparent 5px solid;
+			border-bottom: white 40px solid;
+			z-index: 3;
+			left: 36px;
+			top: -50px;
+		}
+
+		.shoulder_armor.right .emblem span {
+			font-size: 90px;
+			font-weight: bold;
+			color: white;
+		}
+
+		.shoulder_armor.out_line.right {
+			transform: scale(-1.2,1.2);
+		}
+		.hand {
+			width: 158px;
+			height: 155px;
+			background-color: #EDE9FF;
+			border: 10px solid #F32283;
+			border-radius: 50%;
+			left: 0;
+			top: 200px;
+			position: absolute;
+			z-index: -4;
+		}
+
+		.hand .finger {
+			width: 80px;
+			height: 78px;
+			background-color: #EDE9FF;
+			border: 10px solid #F32283;
+			position: absolute;
+			border-top-color: transparent;
+			border-radius: 50%;
+			transform: rotate(-30deg);
+			right: -20px;
+			top: 40px;
+		}
+
+		.hand.right {
+			transform: scale(-1,1);
+			right: 0;
+			left: auto;
+		}
+
+        .meta-foot {
+            width: 218px;
+            height: 105px;
+			overflow: hidden;
+			z-index: -7;
+
+        }
+        .meta-foot .meta-foot_inner {
+            width: 240px;
+            height: 286px;
+			background: linear-gradient(180deg,#F32283 0 36%, #F61783 36% 100%);
+            border-radius: 50%
+
+        }
+        .meta-foot.right {
+			transform: scale(-1,1);
+			left: auto;
+			right: 100px;
+        }
+
+		.meta_shoes {
+			display: flex;
+			justify-content: space-between;
+			width: 466px;
+			height: 124px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;	
+    		z-index: -3;
+		}
+
+		.meta-foot_shoe-sole.left {
+			position: absolute;
+			width: 213px;
+			height: 50px;
+			border-radius: 50% 50% 20px 20px;
+			background: linear-gradient(180deg, transparent 0 50%, #F32283 50% 100%);
+			border-top: none;
+			bottom: 0;
+			left: 5px;
+		}
+		.meta-foot_shoe-sole.right {
+			position: absolute;
+			width: 213px;
+			height: 50px;
+			border-radius: 50% 50% 20px 20px;
+			background: linear-gradient(180deg, transparent 0 50%, #F32283 50% 100%);
+			border-top: none;
+			top: 73px;
+			right: 5px;
+		}
+
+		.clone {
+			position: absolute;
+			height: 124px;
+			transform: scale(.9);
+			overflow: hidden;
+		}
+
+		.clone .meta-foot_shoe-sole {
+			background:#6142A2;
+
+		}
+
+		.clone .meta-foot_inner {
+			background:#6142A2;
+		}
+
+		.clone .shoe_part {
+			width: 180px;
+			height: 286px;
+			border-top: 18px solid #513195;
+			border-radius: 50%;
+			top: 40px;
+			left: -15px;
+			z-index: 3;
+			/* transform: rotate(1deg); */
+			position: absolute;
+		}
+        .clone.right {
+			transform: scale(-0.9,0.9);
+			left: auto;
+			right: 0;
+        }
+        .clone .meta-foot.right .meta-foot_inner {
+			margin-left: -20px;
+		}
+		.clone .meta-foot_shoe-sole.right {
+			right: 0;
+		}
+
+		.mant_cloth {
+			width: 590px;
+			height: 364px;
+			overflow: hidden;
+			z-index: -10;
+			position: absolute;
+			bottom: 14px;
+			right: 0;
+			left: 0;
+			margin: auto;
+		}
+		.mant_cloth_inner {
+			width: 590px;
+			height: 784px;
+			background-color: ;
+			border: 10px solid #F32283;
+			border-radius: 50%;
+			background: linear-gradient(180deg,#2443FF 0 43%, #F32283 43% 44%, #FFDA05 44% 45%, #F32283 45% 77% );
+		}
+	</style>
+</body>
+</html>
